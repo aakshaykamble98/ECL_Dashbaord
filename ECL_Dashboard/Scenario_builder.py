@@ -79,7 +79,8 @@ def app():
             unsafe_allow_html=True
         )
         
-        ECL_weighted = pd.read_excel("Datasets/ECL_weighted.xlsx")
+        base_dir = os.path.dirname(__file__)
+        ECL_weighted = pd.read_excel(os.path.join(base_dir, "Datasets", "ECL_weighted.xlsx"))
 
         # Apply formatting to the entire DataFrame
         ECL_weighted = ECL_weighted.applymap(
@@ -99,7 +100,8 @@ def app():
             """,
             unsafe_allow_html=True
         )
-        Account_wise_scenario_report = pd.read_excel("Datasets/Account_wise_scenario_report.xlsx")
+        base_dir = os.path.dirname(__file__)
+        Account_wise_scenario_report = pd.read_excel(os.path.join(base_dir, "Datasets", "Account_wise_scenario_report.xlsx"))
         
         Account_wise_scenario_report = Account_wise_scenario_report.fillna('')
         
