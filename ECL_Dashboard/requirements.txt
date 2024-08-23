@@ -1,0 +1,7 @@
+pandas==2.2.2
+streamlit==1.32.2
+streamlit-option-menu==0.3.13
+plotly==5.20.0
+kaleido==0.2.1
+babel==2.9.1
+openpyxl==3.1.5
